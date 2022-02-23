@@ -1,0 +1,75 @@
+\documentclass[12pt, twoside, a4paper]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,width=175mm,top=25mm,bottom=25mm,headsep=10pt]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{derivative}
+\usepackage{libertine}
+\usepackage{euler}
+\usepackage[T1]{fontenc}
+\setlength{\parindent}{1em}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\headheight=15pt
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[CE]{\small ВВЕДЕНИЕ В ТЕОРИЮ НЕЛИНЕЙНЫХ ДИССИПАТИВНЫХ СИСТЕМ}
+\fancyhead[CO]{\small Д.С. ЗАГОРУЛЯ}
+\fancyhead[LE, RO]{\thepage}
+\thispagestyle{fancy}
+%\renewcommand{\thesection}{}
+\title{\large \textbf{ВВЕДЕНИЕ В ТЕОРИЮ НЕЛИНЕЙНЫХ ДИССИПАТИВНЫХ СИСТЕМ}}
+\author{Д.С. Загоруля \footnote{Vk, telegram: @dimicorn}}
+\date{Весна 2022}
+\usepackage{hyperref}
+\hypersetup{colorlinks, citecolor=blue, filecolor=blue, linkcolor=blue, urlcolor=blue}
+\usepackage{titlesec}
+\titleformat{\section}{\filcenter\normalfont\MakeUppercase}{\thesection.}{.5em}{}
+\titleformat{\subsection}[runin]{\normalfont\normalsize\bfseries}{}{0em}{}
+%\renewcommand{\thesubsection}{}
+\addto\captionsrussian{\renewcommand{\contentsname}{}}
+\newtheorem{problem}{Задача}[section]
+\theoremstyle{definition}
+\newtheorem*{definition}{Определение}
+%\newtheorem{definition}{Определение}[section]
+
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{Программа курса}
+\begin{enumerate}
+    \item \textcolor{red}{Основные понятия.} Открытые системы. Неравновесность. \textcolor{red}{Нелинейный осциллятор,} возбудимая среда, автоволны, диссипативные структуры. Элементы качественной теории динамических систем. Диссипативные системы. \textcolor{red}{Фазовый портрет, траектория,} основные типы бифуркаций на плоскости. Устойчивость, характеристические показатели Ляпунова. Понятие аттрактора.
+    \item Бифуркации в многомерных системах. \textcolor{red}{Странные аттракторы. Отображение Пуанкаре.} Теория одномерных гладких отображений. Хаос в динамических системах и сценарии (пути) его возникновения. \textcolor{red}{Фрактальные структуры и их размерность.}
+    \item Примеры пространственно-временных структур в нелинейных распределенных системах. Автоволновые режимы в средах с диффузией. Уравнение Фишера-Колмогорова-Петровского-Пескунова. Волны перемещения. Бегущие импульсы. Спиральные волны. Ведущие центры. Стационарные неоднородные структуры, бифуркации Тьюринга.
+    \item Пространственно-временные структуры в физических и химических системах и соответствующие модели. Модель Пригожина-Лефевра-Николиса (<<брюсселятор>>). Тепловые волны и неоднородные стационарные состояния в системе Fe$^{+}$H$_{2}$. Механизм эффекта баретирования. 
+\end{enumerate}
+\newpage
+\input{body}
+\newpage
+\section{Контрольные вопросы и задачи}
+\begin{enumerate}
+    \item Провести бифуркационный анализ модели <<брюсселятор>>.
+    \item Доказать, что сумма показателей Ляпунова равна усредненной по траектории дифергенции векторного поля.
+    \item Построить канторово множество, имеющее фрактальную размерность $\log_{7} 4$.
+    \item Чему равна фрактальная размерность трехмерного ковра Серпинского?
+    \item Вычислить два первых бифуркационных параметра последовательности Фейгенбаума для логистического отображения.
+    \item Найти скорость установившейся волны (автомодельного решения) для уравнения $\frac{\partial x}{\partial t} = \alpha (a-x)(b-x)(c-x) + \frac{\partial^2 x}{\partial r^2}$, где $a < b < c$.
+    \item Вывести условия бифуркации Тьюринга для распределенной модели <<брюсселятор>>.
+    \item В чем суть эффекта баретирования? Оценить диапазон напряжения, в котором ток, протекающий через баретор, остается постоянным.
+\end{enumerate}
+\section{Список литературы}
+\begin{enumerate}
+    \item А.Ю. Лоскутов, А.С. Михайлов. Введение в синергетику. М.: Наука, 1990.
+    \item А.И. Чуличков. Математические методы нелинейной динамики. М.: Физматлит, 2000.
+    \item Марри Дж. Нелинейные дифференциальные уравнения в биологии. Лекции о моделях. Пер. с англ. М.: Мир, 1983.
+    \item А. Лихтенберг, М. Либерман. Регулярная и стохастическая динамика. М.: Мир, 1984.
+    \item В.А. Васильев, Ю.М. Романовский, В.Г. Яхно. Автоволновые процессы. М.: Наука, 1987.
+\end{enumerate}
+
+
+\end{document}
+
